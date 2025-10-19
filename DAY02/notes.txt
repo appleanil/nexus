@@ -54,12 +54,32 @@ update the details in pom.xml
 step 3: Where we need to keep nexus credentials?
 
 --> In SonarQube we updated credentials in pom.xml
---> In nexus, repo details in pom.xml and credentials in /opt/apache-maven-3.9.10/conf/settings.xml
+--> In nexus, repo details in pom.xml and credentials in /opt/apache-maven-3.9.10/conf/settings.xml  line no 134 lo paste cheyali
+
+ <!-- Another sample, using keys to authenticate.
+    128     <server>
+    129       <id>siteServer</id>
+    130       <privateKey>/path/to/private/key</privateKey>
+    131       <passphrase>optional; leave empty if not used.</passphrase>
+    132     </server>
+    133     -->
+    134  <server>
+    135       <id>nexus</id>
+    136       <username>admin</username>
+    137       <password>apple</password>
+    138     </server>
+    139   </servers>
+    140
+    141
+    142
+    143   <!-- mirrors
+    144    | This is a list of mirrors to be used in downloading artifacts from remote repositories.
+
 
    <server>
       <id>nexus</id>
       <username>admin</username>
-      <password>password</password>
+      <password>apple</password>
     </server>
 
 
